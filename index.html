@@ -1,0 +1,29 @@
+<html ng-app="myApp">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }  
+      
+    </style>
+ </head>
+
+ <body ng-controller="myController">
+   Messages Delivered per Question
+   <div style="width: 200px; height: 500px;">
+      <canvas class="chart chart-bar" chart-data="data" chart-legend="true"
+          chart-labels="labels" chart-click="onClick" width="200px" height="500px" >
+      </canvas> 
+   </div>
+   
+    <link rel="stylesheet" href="angular-chart.js/angular-chart.css">
+    
+    <script src="angular-chart.js/angular-chart.js"></script>
+    
+    <script src="myApp.js"></script>
+    <script src="myController.js"></script>
+    <script src="updateDataService.js"></script>
+ </body>
+</html>
